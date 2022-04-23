@@ -8,25 +8,32 @@
 }
 
 body {
-    background-color: #242424;
-    color: #eee;
+    background-color: #aaa;
+    color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* Navbar */
 nav {
-    background-color: #363636;
+    background-color: #ddd;
     display: flex;
     padding: 0 1em;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 5px 10px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav > div > a {
-    padding: 1em 0.25em;
+    padding: 0.5em 0.25em;
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 600;
     cursor: pointer;
+    font-size: 1.3rem;
     transition: 1200ms;
 }
 
@@ -44,6 +51,22 @@ nav > div {
 }
 
 nav > div > a:hover {
-    box-shadow: inset 0 -0.25em white;
+    box-shadow: inset 0 -0.25em black;
     transition: 200ms;
+}
+
+/* Main body */
+main {
+    background-color: #ddd;
+    width: max-content;
+    min-width: 720px;
+    margin: auto;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px gray;
+
+    height: 100vh;
+}
+
+.main-title {
+    text-align: center;
 }
