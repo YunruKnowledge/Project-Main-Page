@@ -55,16 +55,26 @@ nav > div > a:hover {
     transition: 200ms;
 }
 
+
+/* Intro */
+.intro {
+    height: 40vh;
+}
+
+
 /* Main body */
 main {
     background-color: #ddd;
-    width: max-content;
-    min-width: 720px;
     margin: auto;
-    padding: 1rem;
+    padding: 5rem 1rem;
     box-shadow: 5px 5px 10px gray;
+    transform: skewY(-4deg);
 
     height: 100vh;
+}
+
+.main-reverse-skew {
+    transform: skewY(4deg);
 }
 
 .main-title {
