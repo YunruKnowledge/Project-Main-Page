@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #aaa;
+    background-color: #ccc;
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -56,27 +56,86 @@ nav > div > a:hover {
 }
 
 
-/* Intro */
+/* Intro+ */
 .intro {
-    height: 40vh;
+    height: 52.5vh;
+    background-image: url(./profile.png);
+    background-repeat: no-repeat;
+    background-position: center -27.5vh;
+    background-size: 100vh;
+}
+
+.intro-title {
+    text-align: center;
+    -webkit-text-stroke: 0.025em white;
+    font-size: 2.5rem;
 }
 
 
 /* Main body */
 main {
-    background-color: #ddd;
+    background-color: #eee;
     margin: auto;
     padding: 5rem 1rem;
+    margin-top: -3rem;
     box-shadow: 5px 5px 10px gray;
     transform: skewY(-4deg);
-
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
 }
 
-.main-reverse-skew {
+main > * {
     transform: skewY(4deg);
 }
 
-.main-title {
-    text-align: center;
+.project-card {
+    border-radius: 0.5rem;
+    border: 0.25rem solid white;
+    height: max-content;
+    background-color: white;
+    box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
+.project-card-text {
+    padding: 1em;
+    border-bottom: solid 0.25rem;
+    border-image:  linear-gradient(to right, #f63caf, #5068d3) 1; 
+}
+
+.project-card-text > p {
+    font-size: 1.25rem;
+}
+
+.project-card-img, .project-card-img > a > img {
+    width: 32rem;
+    height: 18rem;
+    overflow: hidden;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+    object-fit: cover;
+}
+
+.project-card-img > a > img {
+    transition: 200ms;
+    filter: brightness(0.75) saturate(0.75);
+}  
+
+.project-card-img > a > img:hover {
+    transform: scale(102%);
+    filter: brightness(1) saturate(1);
+}  
+
+
+/* 
+    Footer
+*/
+
+footer {
+    margin-top: -3rem;
+    padding: 6rem 0 0 0;
+    height: 20vh;
+    background-color: #ccc;
 }
